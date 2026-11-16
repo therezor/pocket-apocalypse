@@ -1,0 +1,5 @@
+dependencies:
+  idf: ">=5.0"
+  # Display, speaker (ES8311 on ADV), power and board autodetect.
+  # 0.2.17 is the first registry version that detects board_M5CardputerADV.
+  m5stack/m5unified: "^0.2.17"

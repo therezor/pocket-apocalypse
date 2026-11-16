@@ -1,0 +1,1078 @@
+{
+  "name": "Ashes Twilight Warrior",
+  "comment": "Twilight Warrior (1998 TC) levels 2, 3 and 5-10 (Killing Room and Navy SEAL left out) with the Ashes 2063 weapons, human enemies, items, fog and gore of dbp77.json. TW's civilians (3003) and the MAP08 general (67) keep their TW behaviour (tw_npcs.deh); its ambient-sound things (66) are dropped. Levels share 5 music tracks (music_share); fullscreen view with an Ashes-style overlay HUD (hud: overlay). Personal use only.",
+  "iwad": "~/Library/Application Support/gzdoom/DOOM2.WAD",
+  "pwads": [
+    "wads/TWILIGHT.WAD"
+  ],
+  "deh": [
+    "tools/mods/ashes_humans.deh",
+    "tools/mods/tw_npcs.deh"
+  ],
+  "thin_things": {
+    "66": 0
+  },
+  "weapon_offset": [
+    32,
+    8
+  ],
+  "half_textures": {
+    "min_width": 64,
+    "height": true
+  },
+  "sfx_rate": 8000,
+  "sfx_long": [
+    6000,
+    6000
+  ],
+  "end_flat": "SLIME16",
+  "end_text": [
+    "THE LAST REGISTER FALLS SILENT.",
+    "",
+    "THE MALLS ARE YOURS NOW. NOBODY",
+    "IS LEFT TO SELL YOU ANYTHING,",
+    "AND NOTHING IS LEFT TO BUY.",
+    "",
+    "THE ECONOMY IS DEAD."
+  ],
+  "strings": {
+    "GOTSHOTGUN": "Got the Lever Action Shotgun!",
+    "GOTSHOTGUN2": "Got the Hunter Shotgun!",
+    "GOTCHAINGUN": "Got the Modular Rifle!",
+    "GOTLAUNCHER": "Got the Thumper!",
+    "GOTPLASMA": "Got the Bolt-Caster!",
+    "HUSTR_1": "1: Golden Triangle",
+    "HUSTR_2": "2: Denied Area",
+    "HUSTR_3": "3: Embassy",
+    "HUSTR_4": "4: North Sea Zone",
+    "HUSTR_5": "5: Counter-Hijack",
+    "HUSTR_6": "6: Maximum Prejudice",
+    "HUSTR_7": "7: Immediate Action",
+    "HUSTR_8": "8: Operation Phoenix"
+  },
+  "monster_swap": {
+    "58": [
+      84
+    ],
+    "3006": [
+      3004
+    ],
+    "3005": [
+      65,
+      84
+    ],
+    "69": [
+      65
+    ],
+    "68": [
+      65
+    ],
+    "71": [
+      84
+    ],
+    "64": [
+      65
+    ],
+    "16": [
+      65
+    ],
+    "7": [
+      65
+    ],
+    "2005": [
+      2049
+    ],
+    "2006": [
+      17
+    ]
+  },
+  "sprite_sets": [
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "POSS",
+      "frames": {
+        "*": "VUL1"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "SPOS",
+      "frames": {
+        "*": "VUL3"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "CPOS",
+      "frames": {
+        "*": "RGAL",
+        "G": "RGAL:H"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "SSWV",
+      "frames": {
+        "A": "NGRD:A",
+        "B": "NGRD:B",
+        "C": "NGRD:C",
+        "D": "NGRD:D",
+        "E": "NGRD:E",
+        "F": "NGRD:E",
+        "G": "NGRD:F",
+        "H": "NGRD:G",
+        "I": "NGRD:H",
+        "J": "NGRD:I",
+        "K": "NGRD:J",
+        "L": "NGRD:K",
+        "M": "NGRD:L",
+        "N": "VUL3:M",
+        "O": "VUL3:N",
+        "P": "VUL3:O",
+        "Q": "VUL3:P",
+        "R": "VUL3:Q",
+        "S": "VUL3:R",
+        "T": "VUL3:S",
+        "U": "VUL3:T",
+        "V": "VUL3:U",
+        "*": "NGRD"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "TROO",
+      "frames": {
+        "*": "TROO"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "SARG",
+      "frames": {
+        "*": "SARG"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "MISL",
+      "frames": {
+        "*": "BLOO",
+        "A": "BLOO:A",
+        "B": "SPLO:C",
+        "C": "SPLO:F",
+        "D": "SPLO:J"
+      },
+      "scale": [
+        4,
+        5
+      ],
+      "frame_scale": {
+        "B": [
+          2,
+          1
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "BEXP",
+      "frames": {
+        "*": "SPLO",
+        "A": "SPLO:A",
+        "B": "SPLO:B",
+        "C": "SPLO:D",
+        "D": "SPLO:G",
+        "E": "SPLO:K"
+      },
+      "scale": [
+        2,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "SHEL",
+      "frames": {
+        "*": "SHEL",
+        "B": "SHEL:A",
+        "C": "SHEL:A",
+        "D": "SHEL:A",
+        "E": "SHEL:A",
+        "F": "SHEL:A",
+        "G": "SHEL:A",
+        "H": "SHEL:A"
+      },
+      "scale": [
+        2,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "SBOX",
+      "frames": {
+        "*": "SBOX",
+        "B": "SBOX:A",
+        "C": "SBOX:A",
+        "D": "SBOX:A",
+        "E": "SBOX:A",
+        "F": "SBOX:A",
+        "G": "SBOX:A",
+        "H": "SBOX:A"
+      },
+      "scale": [
+        7,
+        10
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "BROK",
+      "frames": {
+        "*": "BROK",
+        "B": "BROK:A",
+        "C": "BROK:A",
+        "D": "BROK:A",
+        "E": "BROK:A",
+        "F": "BROK:A",
+        "G": "BROK:A",
+        "H": "BROK:A"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "BON2",
+      "frames": {
+        "*": "BON2",
+        "B": "BON2:A",
+        "C": "BON2:A",
+        "D": "BON2:A",
+        "E": "BON2:A",
+        "F": "BON2:A",
+        "G": "BON2:A",
+        "H": "BON2:A"
+      },
+      "scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "ARM1",
+      "frames": {
+        "*": "ARM1",
+        "B": "ARM1:A",
+        "C": "ARM1:A",
+        "D": "ARM1:A",
+        "E": "ARM1:A",
+        "F": "ARM1:A",
+        "G": "ARM1:A",
+        "H": "ARM1:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "ARM2",
+      "frames": {
+        "*": "ARM2",
+        "B": "ARM2:A",
+        "C": "ARM2:A",
+        "D": "ARM2:A",
+        "E": "ARM2:A",
+        "F": "ARM2:A",
+        "G": "ARM2:A",
+        "H": "ARM2:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "MEDI",
+      "frames": {
+        "*": "MEDI",
+        "B": "MEDI:A",
+        "C": "MEDI:A",
+        "D": "MEDI:A",
+        "E": "MEDI:A",
+        "F": "MEDI:A",
+        "G": "MEDI:A",
+        "H": "MEDI:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "BON1",
+      "frames": {
+        "*": "BON1",
+        "B": "BON1:A",
+        "C": "BON1:A",
+        "D": "BON1:A",
+        "E": "BON1:A",
+        "F": "BON1:A",
+        "G": "BON1:A",
+        "H": "BON1:A"
+      },
+      "scale": [
+        2,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "STIM",
+      "frames": {
+        "*": "STIM",
+        "B": "STIM:A",
+        "C": "STIM:A",
+        "D": "STIM:A",
+        "E": "STIM:A",
+        "F": "STIM:A",
+        "G": "STIM:A",
+        "H": "STIM:A"
+      },
+      "scale": [
+        2,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "BPAK",
+      "frames": {
+        "*": "BPAK",
+        "B": "BPAK:A",
+        "C": "BPAK:A",
+        "D": "BPAK:A",
+        "E": "BPAK:A",
+        "F": "BPAK:A",
+        "G": "BPAK:A",
+        "H": "BPAK:A"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "PMAP",
+      "frames": {
+        "*": "PMAP",
+        "B": "PMAP:A",
+        "C": "PMAP:A",
+        "D": "PMAP:A",
+        "E": "PMAP:A",
+        "F": "PMAP:A",
+        "G": "PMAP:A",
+        "H": "PMAP:A"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "PSTR",
+      "frames": {
+        "*": "PSTR",
+        "B": "PSTR:A",
+        "C": "PSTR:A",
+        "D": "PSTR:A",
+        "E": "PSTR:A",
+        "F": "PSTR:A",
+        "G": "PSTR:A",
+        "H": "PSTR:A"
+      },
+      "scale": [
+        3,
+        4
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "SOUL",
+      "frames": {
+        "*": "SOUL",
+        "B": "SOUL:A",
+        "C": "SOUL:A",
+        "D": "SOUL:A",
+        "E": "SOUL:A",
+        "F": "SOUL:A",
+        "G": "SOUL:A",
+        "H": "SOUL:A"
+      },
+      "scale": [
+        3,
+        4
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "SUIT",
+      "frames": {
+        "*": "SUIT",
+        "B": "SUIT:A",
+        "C": "SUIT:A",
+        "D": "SUIT:A",
+        "E": "SUIT:A",
+        "F": "SUIT:A",
+        "G": "SUIT:A",
+        "H": "SUIT:A"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "PINV",
+      "frames": {
+        "*": "PINV",
+        "B": "PINV:A",
+        "C": "PINV:A",
+        "D": "PINV:A",
+        "E": "PINV:A",
+        "F": "PINV:A",
+        "G": "PINV:A",
+        "H": "PINV:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "CLIP",
+      "frames": {
+        "*": "CLIP",
+        "B": "CLIP:A",
+        "C": "CLIP:A",
+        "D": "CLIP:A",
+        "E": "CLIP:A",
+        "F": "CLIP:A",
+        "G": "CLIP:A",
+        "H": "CLIP:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "AMMO",
+      "frames": {
+        "*": "AMMO",
+        "B": "AMMO:A",
+        "C": "AMMO:A",
+        "D": "AMMO:A",
+        "E": "AMMO:A",
+        "F": "AMMO:A",
+        "G": "AMMO:A",
+        "H": "AMMO:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "CELL",
+      "frames": {
+        "*": "CELL",
+        "B": "CELL:A",
+        "C": "CELL:A",
+        "D": "CELL:A",
+        "E": "CELL:A",
+        "F": "CELL:A",
+        "G": "CELL:A",
+        "H": "CELL:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "CELP",
+      "frames": {
+        "*": "CELP",
+        "B": "CELP:A",
+        "C": "CELP:A",
+        "D": "CELP:A",
+        "E": "CELP:A",
+        "F": "CELP:A",
+        "G": "CELP:A",
+        "H": "CELP:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "ROCK",
+      "frames": {
+        "*": "40MM:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "BAL1",
+      "frames": {
+        "*": "BAL3",
+        "A": "BAL3:A",
+        "B": "BAL3:B",
+        "C": "BAL3:C",
+        "D": "BAL3:D",
+        "E": "BAL3:E"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "BLUD",
+      "frames": {
+        "*": "BLUD",
+        "A": "BLUD:A",
+        "B": "BLUD:B",
+        "C": "BLUD:C"
+      },
+      "scale": [
+        1,
+        1
+      ],
+      "frame_scale": {
+        "B": [
+          1,
+          2
+        ],
+        "C": [
+          1,
+          2
+        ]
+      },
+      "palette": "red"
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "POB1",
+      "frames": {
+        "*": "GIBL",
+        "A": "GIBL:F"
+      },
+      "scale": [
+        1,
+        1
+      ],
+      "palette": "red"
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "POB2",
+      "frames": {
+        "*": "GIBL",
+        "A": "GIBL:G"
+      },
+      "scale": [
+        1,
+        1
+      ],
+      "palette": "red"
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "POL5",
+      "frames": {
+        "*": "GIBL",
+        "A": "GIBL:E"
+      },
+      "scale": [
+        1,
+        1
+      ],
+      "palette": "red"
+    }
+  ],
+  "sounds_replace": {
+    "DSPOSIT1": "wads/ashesmon/pk/Sounds/Monsters/DSVULSI1.ogg",
+    "DSPOSIT2": "wads/ashesmon/pk/Sounds/Monsters/DSVULSI2.ogg",
+    "DSPOSIT3": "wads/ashesmon/pk/Sounds/Monsters/DSVULSI3.ogg",
+    "DSPOPAIN": "wads/ashesmon/pk/Sounds/Monsters/DSVULPA1.ogg",
+    "DSPODTH1": "wads/ashesmon/pk/Sounds/Monsters/DSVUDTH1.ogg",
+    "DSPODTH2": "wads/ashesmon/pk/Sounds/Monsters/DSVUDTH2.ogg",
+    "DSPODTH3": "wads/ashesmon/pk/Sounds/Monsters/DSVUDTH3.ogg",
+    "DSPOSACT": "wads/ashesmon/pk/Sounds/Monsters/DSVULAC1.ogg",
+    "DSSSSIT": "wads/ashesmon/pk/Sounds/Monsters/GRDSE1.ogg",
+    "DSSSDTH": "wads/ashesmon/pk/Sounds/Monsters/GRDDI1.ogg",
+    "DSBSPSIT": "wads/ashesmon/pk/Sounds/Monsters/FEMSEE1.ogg",
+    "DSKEENPN": "wads/ashesmon/pk/Sounds/Monsters/femhit1.ogg",
+    "DSKEENDT": "wads/ashesmon/pk/Sounds/Monsters/femded1.ogg",
+    "DSBGSIT1": "wads/ashesmon/pk/Sounds/Monsters/dspfsigt.ogg",
+    "DSBGSIT2": "wads/ashesmon/pk/Sounds/Monsters/dspfsigt.ogg",
+    "DSBGACT": "wads/ashesmon/pk/Sounds/Monsters/dspfidle.ogg",
+    "DSBGDTH1": "wads/ashesmon/pk/Sounds/Monsters/dspfdth1.ogg",
+    "DSBGDTH2": "wads/ashesmon/pk/Sounds/Monsters/dspfdth2.ogg",
+    "DSSGTSIT": "wads/ashesmon/pk/Sounds/Monsters/dscasit1.ogg",
+    "DSDMPAIN": "wads/ashesmon/pk/Sounds/Monsters/dscapai1.ogg",
+    "DSSGTDTH": "wads/ashesmon/pk/Sounds/Monsters/dscadth1.ogg",
+    "DSDMACT": "wads/ashesmon/pk/Sounds/Monsters/dscaact1.ogg"
+  },
+  "zweapons": [
+    {
+      "name": "Crowbar",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Crowbar.txt",
+      "actor": "Crowbar",
+      "into": 0,
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "Fire"
+      }
+    },
+    {
+      "name": "Police Pistol",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Glock.txt",
+      "actor": "PolicePistol",
+      "into": 1,
+      "lift": 0,
+      "labels": {
+        "ready": "LoadedReady",
+        "select": "LoadedSelect",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 15
+    },
+    {
+      "name": "Lever Action Shotgun",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/LeverGun.txt",
+      "actor": "Leveraction",
+      "into": 2,
+      "lift": 0,
+      "labels": {
+        "ready": "ReadyLoaded",
+        "select": "SelectLoaded",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "ReloadLoadedStart",
+        "reload_loop": "ShellLoaded",
+        "reload_end": "ReloadDone",
+        "extra": [
+          "Pump"
+        ]
+      },
+      "ammo": "am_shell",
+      "mag": 7,
+      "pickup_replaces": "SHOT",
+      "pickup": "LVGPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "jump_fire": "\"leverfired\"",
+      "skip_reload_end": "^LEAC\\b"
+    },
+    {
+      "name": "Modular Rifle",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Ar15.txt",
+      "actor": "ModRifle1",
+      "into": 3,
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "RealFire",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 30,
+      "pickup_replaces": "MGUN",
+      "pickup": "MR1PA",
+      "pickup_scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Thumper",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Thumper.txt",
+      "actor": "Thumper",
+      "into": 4,
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work"
+      },
+      "ammo": "am_misl",
+      "mag": 1,
+      "pickup_replaces": "LAUN",
+      "pickup": "M79PA",
+      "pickup_scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Hunter Shotgun",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Sawedoff.txt",
+      "actor": "HunterShotgun",
+      "into": 8,
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_shell",
+      "mag": 2,
+      "pickup_replaces": "SGN2",
+      "pickup": "HNSPA",
+      "pickup_scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "Revolver",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Revolver.txt",
+      "actor": "revolver",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 6,
+      "slot": 2,
+      "doomednum": 4201,
+      "pickup": "REVPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "place": [
+        {
+          "replace": 2011,
+          "maps": [
+            1
+          ],
+          "every": 2
+        }
+      ]
+    },
+    {
+      "name": "Machine Pistol",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Ingram.txt",
+      "actor": "Ingram",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "LoadedReady",
+        "select": "LoadedSelect",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 32,
+      "slot": 4,
+      "doomednum": 4202,
+      "pickup": "MPIPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "place": [
+        {
+          "replace": 2011,
+          "maps": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Military Rifle",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Ar15.txt",
+      "actor": "M16",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "RealFire",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 30,
+      "slot": 6,
+      "doomednum": 4203,
+      "pickup": "M16PA",
+      "pickup_scale": [
+        1,
+        2
+      ],
+      "place": [
+        {
+          "replace": 2011,
+          "maps": [
+            2
+          ],
+          "every": 4
+        }
+      ]
+    },
+    {
+      "name": "9mm Autoloader",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Glock.txt",
+      "actor": "Glock",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "LoadedReady",
+        "select": "LoadedSelect",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 16,
+      "slot": 2,
+      "doomednum": 4204,
+      "pickup": "GLPPA",
+      "pickup_scale": [
+        7,
+        10
+      ],
+      "place": [
+        {
+          "replace": 2011,
+          "maps": [
+            2
+          ],
+          "every": 3
+        }
+      ]
+    },
+    {
+      "name": "Pump-action Shotgun",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Shotgun.txt",
+      "actor": "pumpaction",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "ReloadStart",
+        "reload_loop": "ReloadLoop",
+        "reload_end": "ReloadDone"
+      },
+      "ammo": "am_shell",
+      "mag": 6,
+      "slot": 3,
+      "doomednum": 4205,
+      "pickup": "GRZPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "place": [
+        {
+          "replace": 2011,
+          "maps": [
+            2
+          ],
+          "every": 2
+        }
+      ]
+    },
+    {
+      "name": "Bolt-Caster",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/XBOW.txt",
+      "actor": "Xbow",
+      "into": 5,
+      "lift": 0,
+      "labels": {
+        "ready": "LoadedReady",
+        "select": "LoadedSelect",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_cell",
+      "mag": 1,
+      "fire": [
+        90,
+        1,
+        0
+      ],
+      "missile_as_bullet": true,
+      "pickup_replaces": "PLAS",
+      "pickup": "XBWPA",
+      "pickup_scale": [
+        7,
+        10
+      ]
+    },
+    {
+      "name": "Battle Rifle",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/FAL.txt",
+      "actor": "FAL",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "RealFire",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 20,
+      "slot": 7,
+      "doomednum": 4206,
+      "pickup": "FWEPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "place": [
+        {
+          "replace": 2048,
+          "maps": [
+            3
+          ],
+          "every": 2
+        }
+      ]
+    }
+  ],
+  "remove_weapons": [
+    6,
+    7
+  ],
+  "fog": {
+    "color": [
+      10,
+      11,
+      13
+    ],
+    "start": 64,
+    "range": 640
+  },
+  "gore": 2,
+  "map_list": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "music_share": {
+    "D_STALKS": "D_THE_DA",
+    "D_SHAWN": "D_COUNTD",
+    "D_DDTBLU": "D_DOOM",
+    "D_IN_CIT": "D_RUNNIN",
+    "D_DM2INT": "D_DEAD",
+    "D_READ_M": "D_DEAD"
+  },
+  "lump_alias": {
+    "INTERPIC": "TITLEPIC"
+  },
+  "hud": "overlay"
+}

@@ -1,0 +1,14 @@
+# Twilight Warrior on Cardputer / Cardputer ADV (ESP32-S3FN8, 8 MB flash),
+# for flashing directly with esptool. The game data is embedded in the app.
+#
+# With M5Launcher installed there is no need for this table: install
+# build/twilight_warrior.bin through Launcher (SD card or
+# tools/launcher_install.sh); Launcher keeps itself resident and places the
+# app in its free space (~6.5 MB on an otherwise empty device).
+#
+# Savegames go to the microSD card (/sd/doom), settings to NVS.
+#
+# Name,     Type, SubType,  Offset,    Size,      Flags
+nvs,        data, nvs,      0x9000,    0x6000,
+phy_init,   data, phy,      0xf000,    0x1000,
+factory,    app,  factory,  0x10000,   0x7F0000,

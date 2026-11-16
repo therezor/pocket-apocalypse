@@ -1,0 +1,2149 @@
+{
+  "name": "Pocket Apocalypse",
+  "comment": "Scythe (Erik Alm, 2003) episode 1, levels 1-10 (+ fSCYTHE.WAD fixes) with the Ashes 2063 setup: weapons, human enemies, items, props, gore, fog, overlay HUD; every wall and floor (Scythe's own too) is an Ashes texture, switches are Ashes walls with Ashes switch panels by what they do (access keypad = door, call box = lift, lever = exit). Weapons come one at a time: revolver + autoloader 1, lever-action 3, pump 4, modular rifle + machine pistol 5, Thumper 6, hunter shotgun 7, military rifle 8, Bolt-Caster 9, battle rifle 10. Explosive barrels are Ashes' radioactive barrel. Keys: 2 pistols, 3 shotguns, 4 SMGs (machine pistol, modular rifle), 6 rifles (military, battle; own 5.56 ammo), 7 Bolt-Caster. Extra medkits, 9mm boxes and rifle ammo are laid beside existing pickups (add_things). Personal use only.",
+  "iwad": "~/Library/Application Support/gzdoom/DOOM2.WAD",
+  "pwads": [
+    "wads/d4v/SCYTHE.WAD",
+    "wads/d4v/fSCYTHE.WAD"
+  ],
+  "deh": [
+    "tools/mods/ashes_humans.deh",
+    "tools/mods/ashes_projectiles.deh"
+  ],
+  "thin_things": {},
+  "weapon_offset": [
+    32,
+    8
+  ],
+  "half_textures": {
+    "min_width": 64,
+    "height": true
+  },
+  "sfx_rate": 8000,
+  "sfx_long": [
+    6000,
+    6000
+  ],
+  "end_flat": "SLIME16",
+  "end_text": [
+    "THE LORDS OF THE WASTE ARE DUST.",
+    "",
+    "YOU STAND ON THE RUBBLE WITH",
+    "POCKETS FULL OF BOTTLE CAPS.",
+    "THE APOCALYPSE IS OVER, AND IT",
+    "FITS IN ONE HAND.",
+    "",
+    "NOW GO CHARGE YOUR CARDPUTER."
+  ],
+  "strings": {
+    "GOTSHOTGUN": "Got the Lever Action Shotgun!",
+    "GOTSHOTGUN2": "Got the Hunter Shotgun!",
+    "GOTCHAINGUN": "Got the Modular Rifle!",
+    "GOTLAUNCHER": "Got the Thumper!",
+    "GOTPLASMA": "Got the Bolt-Caster!",
+    "HUSTR_1": "1: Get going!",
+    "HUSTR_2": "2: Punchline",
+    "HUSTR_3": "3: Up and around",
+    "HUSTR_4": "4: Lost warehouse",
+    "HUSTR_5": "5: Slimy tunnels",
+    "HUSTR_6": "6: Pressure point",
+    "HUSTR_7": "7: Deadly",
+    "HUSTR_8": "8: Garden base",
+    "HUSTR_9": "9: Computer storage",
+    "HUSTR_10": "10: The Lords",
+    "PRESSYN": "press Enter.",
+    "NIGHTMARE": "Glow In The Dark? Mutants come\nback, raiders shoot faster and\nnobody brought sunscreen.\n\npress Enter if you glow.",
+    "PD_BLUEO": "Need the blue key for this",
+    "PD_REDO": "Need the red key for this",
+    "PD_YELLOWO": "Need the yellow key for this",
+    "C1TEXT": "HALFWAY THROUGH THE ZONE.\n\nYOUR BOOTS ARE MELTING, YOUR\nCANTEEN TASTES LIKE BATTERIES\nAND THE RAIDERS HAVE STARTED\nWRITING SONGS ABOUT YOU.\n\nTERRIBLE SONGS.\n\nRELOAD, WANDERER. THE LORDS\nOF THE WASTE ARE WAITING."
+  },
+  "monster_swap": {
+    "58": [
+      84
+    ],
+    "3006": [
+      3004
+    ],
+    "3005": [
+      65,
+      84
+    ],
+    "69": [
+      65
+    ],
+    "3003": [
+      65
+    ],
+    "66": [
+      84
+    ],
+    "67": [
+      65
+    ],
+    "68": [
+      65
+    ],
+    "71": [
+      84
+    ],
+    "64": [
+      65
+    ],
+    "16": [
+      65
+    ],
+    "7": [
+      65
+    ],
+    "2005": [
+      2049
+    ],
+    "2006": [
+      17
+    ]
+  },
+  "sprite_sets": [
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "POSS",
+      "frames": {
+        "*": "VUL1"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "SPOS",
+      "frames": {
+        "*": "VUL3"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "CPOS",
+      "frames": {
+        "*": "RGAL",
+        "G": "RGAL:H"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "SSWV",
+      "frames": {
+        "A": "NGRD:A",
+        "B": "NGRD:B",
+        "C": "NGRD:C",
+        "D": "NGRD:D",
+        "E": "NGRD:E",
+        "F": "NGRD:E",
+        "G": "NGRD:F",
+        "H": "NGRD:G",
+        "I": "NGRD:H",
+        "J": "NGRD:I",
+        "K": "NGRD:J",
+        "L": "NGRD:K",
+        "M": "NGRD:L",
+        "N": "VUL3:M",
+        "O": "VUL3:N",
+        "P": "VUL3:O",
+        "Q": "VUL3:P",
+        "R": "VUL3:Q",
+        "S": "VUL3:R",
+        "T": "VUL3:S",
+        "U": "VUL3:T",
+        "V": "VUL3:U",
+        "*": "NGRD"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "TROO",
+      "frames": {
+        "*": "TROO"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/MONSTERS",
+      "to": "SARG",
+      "frames": {
+        "*": "SARG"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashes_fx",
+      "to": "MISL",
+      "frames": {
+        "*": "BLOO",
+        "A": "BLOO:A",
+        "B": "HIEX:B",
+        "C": "HIEX:E",
+        "D": "HIEX:H",
+        "E": "BLOO:B",
+        "F": "BLOO:C",
+        "G": "BLOO:D",
+        "H": "BLOO:E",
+        "I": "BLOO:F"
+      },
+      "scale": [
+        4,
+        5
+      ],
+      "frame_scale": {
+        "B": [
+          1,
+          1
+        ],
+        "C": [
+          1,
+          1
+        ],
+        "D": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "dir": "wads/ashes_fx",
+      "to": "BEXP",
+      "frames": {
+        "*": "HIEX",
+        "A": "HIEX:A",
+        "B": "HIEX:B",
+        "C": "HIEX:D",
+        "D": "HIEX:F",
+        "E": "HIEX:I"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "SHEL",
+      "frames": {
+        "*": "SHEL",
+        "B": "SHEL:A",
+        "C": "SHEL:A",
+        "D": "SHEL:A",
+        "E": "SHEL:A",
+        "F": "SHEL:A",
+        "G": "SHEL:A",
+        "H": "SHEL:A"
+      },
+      "scale": [
+        2,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "SBOX",
+      "frames": {
+        "*": "SBOX",
+        "B": "SBOX:A",
+        "C": "SBOX:A",
+        "D": "SBOX:A",
+        "E": "SBOX:A",
+        "F": "SBOX:A",
+        "G": "SBOX:A",
+        "H": "SBOX:A"
+      },
+      "scale": [
+        7,
+        10
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "BROK",
+      "frames": {
+        "*": "BROK",
+        "B": "BROK:A",
+        "C": "BROK:A",
+        "D": "BROK:A",
+        "E": "BROK:A",
+        "F": "BROK:A",
+        "G": "BROK:A",
+        "H": "BROK:A"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "BON2",
+      "frames": {
+        "*": "BON2",
+        "B": "BON2:A",
+        "C": "BON2:A",
+        "D": "BON2:A",
+        "E": "BON2:A",
+        "F": "BON2:A",
+        "G": "BON2:A",
+        "H": "BON2:A"
+      },
+      "scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "ARM1",
+      "frames": {
+        "*": "ARM1",
+        "B": "ARM1:A",
+        "C": "ARM1:A",
+        "D": "ARM1:A",
+        "E": "ARM1:A",
+        "F": "ARM1:A",
+        "G": "ARM1:A",
+        "H": "ARM1:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "ARM2",
+      "frames": {
+        "*": "ARM2",
+        "B": "ARM2:A",
+        "C": "ARM2:A",
+        "D": "ARM2:A",
+        "E": "ARM2:A",
+        "F": "ARM2:A",
+        "G": "ARM2:A",
+        "H": "ARM2:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "MEDI",
+      "frames": {
+        "*": "MEDI",
+        "B": "MEDI:A",
+        "C": "MEDI:A",
+        "D": "MEDI:A",
+        "E": "MEDI:A",
+        "F": "MEDI:A",
+        "G": "MEDI:A",
+        "H": "MEDI:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "BON1",
+      "frames": {
+        "*": "BON1",
+        "B": "BON1:A",
+        "C": "BON1:A",
+        "D": "BON1:A",
+        "E": "BON1:A",
+        "F": "BON1:A",
+        "G": "BON1:A",
+        "H": "BON1:A"
+      },
+      "scale": [
+        2,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "STIM",
+      "frames": {
+        "*": "STIM",
+        "B": "STIM:A",
+        "C": "STIM:A",
+        "D": "STIM:A",
+        "E": "STIM:A",
+        "F": "STIM:A",
+        "G": "STIM:A",
+        "H": "STIM:A"
+      },
+      "scale": [
+        2,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "BPAK",
+      "frames": {
+        "*": "BPAK",
+        "B": "BPAK:A",
+        "C": "BPAK:A",
+        "D": "BPAK:A",
+        "E": "BPAK:A",
+        "F": "BPAK:A",
+        "G": "BPAK:A",
+        "H": "BPAK:A"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "PMAP",
+      "frames": {
+        "*": "PMAP",
+        "B": "PMAP:A",
+        "C": "PMAP:A",
+        "D": "PMAP:A",
+        "E": "PMAP:A",
+        "F": "PMAP:A",
+        "G": "PMAP:A",
+        "H": "PMAP:A"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "PSTR",
+      "frames": {
+        "*": "PSTR",
+        "B": "PSTR:A",
+        "C": "PSTR:A",
+        "D": "PSTR:A",
+        "E": "PSTR:A",
+        "F": "PSTR:A",
+        "G": "PSTR:A",
+        "H": "PSTR:A"
+      },
+      "scale": [
+        3,
+        4
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "SOUL",
+      "frames": {
+        "*": "SOUL",
+        "B": "SOUL:A",
+        "C": "SOUL:A",
+        "D": "SOUL:A",
+        "E": "SOUL:A",
+        "F": "SOUL:A",
+        "G": "SOUL:A",
+        "H": "SOUL:A"
+      },
+      "scale": [
+        3,
+        4
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "SUIT",
+      "frames": {
+        "*": "SUIT",
+        "B": "SUIT:A",
+        "C": "SUIT:A",
+        "D": "SUIT:A",
+        "E": "SUIT:A",
+        "F": "SUIT:A",
+        "G": "SUIT:A",
+        "H": "SUIT:A"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "PINV",
+      "frames": {
+        "*": "PINV",
+        "B": "PINV:A",
+        "C": "PINV:A",
+        "D": "PINV:A",
+        "E": "PINV:A",
+        "F": "PINV:A",
+        "G": "PINV:A",
+        "H": "PINV:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "CLIP",
+      "frames": {
+        "*": "CLIP",
+        "B": "CLIP:A",
+        "C": "CLIP:A",
+        "D": "CLIP:A",
+        "E": "CLIP:A",
+        "F": "CLIP:A",
+        "G": "CLIP:A",
+        "H": "CLIP:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "AMMO",
+      "frames": {
+        "*": "AMMO",
+        "B": "AMMO:A",
+        "C": "AMMO:A",
+        "D": "AMMO:A",
+        "E": "AMMO:A",
+        "F": "AMMO:A",
+        "G": "AMMO:A",
+        "H": "AMMO:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "CELL",
+      "frames": {
+        "*": "CELL",
+        "B": "CELL:A",
+        "C": "CELL:A",
+        "D": "CELL:A",
+        "E": "CELL:A",
+        "F": "CELL:A",
+        "G": "CELL:A",
+        "H": "CELL:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "CELP",
+      "frames": {
+        "*": "CELP",
+        "B": "CELP:A",
+        "C": "CELP:A",
+        "D": "CELP:A",
+        "E": "CELP:A",
+        "F": "CELP:A",
+        "G": "CELP:A",
+        "H": "CELP:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Items",
+      "to": "ROCK",
+      "frames": {
+        "*": "40MM:A"
+      },
+      "scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "BAL1",
+      "frames": {
+        "*": "BAL3",
+        "A": "BAL3:A",
+        "B": "BAL3:B",
+        "C": "BAL3:C",
+        "D": "BAL3:D",
+        "E": "BAL3:E"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashes_fx",
+      "to": "BLUD",
+      "frames": {
+        "*": "BLUD:A",
+        "A": "BLUD:A",
+        "B": "BLUD:A",
+        "C": "BLUD:A"
+      },
+      "scale": [
+        1,
+        2
+      ],
+      "frame_scale": {
+        "A": [
+          1,
+          4
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          1,
+          2
+        ]
+      },
+      "palette": "red"
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "POB1",
+      "frames": {
+        "*": "GIBL",
+        "A": "GIBL:F"
+      },
+      "scale": [
+        1,
+        1
+      ],
+      "palette": "red"
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "POB2",
+      "frames": {
+        "*": "GIBL",
+        "A": "GIBL:G"
+      },
+      "scale": [
+        1,
+        1
+      ],
+      "palette": "red"
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "POL5",
+      "frames": {
+        "*": "GIBL",
+        "A": "GIBL:E"
+      },
+      "scale": [
+        1,
+        1
+      ],
+      "palette": "red"
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "PLSS",
+      "frames": {
+        "*": "CBLT",
+        "A": "CBLT:A",
+        "B": "CBLT:A"
+      },
+      "scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "dir": "wads/ashesweap/pk/Sprites/Effects",
+      "to": "PLSE",
+      "frames": {
+        "*": "CBLT:A"
+      },
+      "scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "dir": "wads/ashesmon/pk/Sprites/Effects",
+      "to": "PUFF",
+      "frames": {
+        "*": "CPUF",
+        "A": "CPUF:A",
+        "B": "CPUF:B",
+        "C": "CPUF:C",
+        "D": "CPUF:D"
+      },
+      "scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/PLAYER",
+      "to": "PLAY",
+      "frames": {
+        "*": "PLAY",
+        "M": "PLAY:L",
+        "N": "PLAY:L",
+        "O": "PLAY:M",
+        "P": "PLAY:N",
+        "Q": "PLAY:O",
+        "R": "PLAY:P",
+        "S": "PLAY:Q",
+        "T": "PLAY:Q",
+        "U": "PLAY:Q",
+        "V": "PLAY:Q",
+        "W": "PLAY:Q"
+      },
+      "scale": [
+        4,
+        5
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "BAR1",
+      "frames": {
+        "*": "POL4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "BKEY",
+      "frames": {
+        "*": "BKEY:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "YKEY",
+      "frames": {
+        "*": "YKEY:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "RKEY",
+      "frames": {
+        "*": "RKEY:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "BSKU",
+      "frames": {
+        "*": "BSKU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "YSKU",
+      "frames": {
+        "*": "YSKU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "RSKU",
+      "frames": {
+        "*": "RSKU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "TRED",
+      "frames": {
+        "*": "FCAN"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "SMRT",
+      "frames": {
+        "*": "FCAN"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "SMGT",
+      "frames": {
+        "*": "FCAN"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "SMBT",
+      "frames": {
+        "*": "FCAN"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "FCAN",
+      "frames": {
+        "*": "FCAN"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "CEYE",
+      "frames": {
+        "*": "CEYE"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "TBLU",
+      "frames": {
+        "*": "COLU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "TGRN",
+      "frames": {
+        "*": "COLU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "TLMP",
+      "frames": {
+        "*": "COLU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "TLP2",
+      "frames": {
+        "*": "COLU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "CBRA",
+      "frames": {
+        "*": "COLU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "COLU",
+      "frames": {
+        "*": "COLU:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "CAND",
+      "frames": {
+        "*": "BOTL:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "ELEC",
+      "frames": {
+        "*": "COL3:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "COL1",
+      "frames": {
+        "*": "COL1:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "COL2",
+      "frames": {
+        "*": "COL2:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "COL3",
+      "frames": {
+        "*": "COL3:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "COL4",
+      "frames": {
+        "*": "COL4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "COL5",
+      "frames": {
+        "*": "COL3:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "COL6",
+      "frames": {
+        "*": "COL6:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "TRE1",
+      "frames": {
+        "*": "TRE1:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "TRE2",
+      "frames": {
+        "*": "TRE2:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "SMIT",
+      "frames": {
+        "*": "SMIT:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "POL1",
+      "frames": {
+        "*": "CPS1:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "POL6",
+      "frames": {
+        "*": "CPS2:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "POL2",
+      "frames": {
+        "*": "CPS6:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "POL3",
+      "frames": {
+        "*": "CPS4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "POL4",
+      "frames": {
+        "*": "POL4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "BRS1",
+      "frames": {
+        "*": "CPS5:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "FSKU",
+      "frames": {
+        "*": "DEB1:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "GOR1",
+      "frames": {
+        "*": "HANG:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "GOR2",
+      "frames": {
+        "*": "GOR4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "GOR3",
+      "frames": {
+        "*": "HANG:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "GOR4",
+      "frames": {
+        "*": "GOR4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "GOR5",
+      "frames": {
+        "*": "GOR4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "HDB1",
+      "frames": {
+        "*": "HANG:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "HDB2",
+      "frames": {
+        "*": "GOR4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "HDB3",
+      "frames": {
+        "*": "HANG:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "HDB4",
+      "frames": {
+        "*": "GOR4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "HDB5",
+      "frames": {
+        "*": "HANG:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes2063/pk/Sprites/EnrichedOld",
+      "to": "HDB6",
+      "frames": {
+        "*": "GOR4:A"
+      },
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "dir": "wads/ashes_fx/splo",
+      "to": "SPLO",
+      "scale": [
+        1,
+        1
+      ],
+      "frames": {
+        "*": "SPLO",
+        "A": "SPLO:A",
+        "B": "SPLO:B",
+        "C": "SPLO:C",
+        "D": "SPLO:D",
+        "E": "SPLO:E",
+        "F": "SPLO:F",
+        "G": "SPLO:G",
+        "H": "SPLO:H",
+        "I": "SPLO:I",
+        "J": "SPLO:J",
+        "K": "SPLO:K",
+        "L": "SPLO:L",
+        "M": "SPLO:M"
+      }
+    }
+  ],
+  "sounds_replace": {
+    "DSPOSIT1": "wads/ashesmon/pk/Sounds/Monsters/DSVULSI1.ogg",
+    "DSPOSIT2": "wads/ashesmon/pk/Sounds/Monsters/DSVULSI2.ogg",
+    "DSPOSIT3": "wads/ashesmon/pk/Sounds/Monsters/DSVULSI3.ogg",
+    "DSPOPAIN": "wads/ashesmon/pk/Sounds/Monsters/DSVULPA1.ogg",
+    "DSPODTH1": "wads/ashesmon/pk/Sounds/Monsters/DSVUDTH1.ogg",
+    "DSPODTH2": "wads/ashesmon/pk/Sounds/Monsters/DSVUDTH2.ogg",
+    "DSPODTH3": "wads/ashesmon/pk/Sounds/Monsters/DSVUDTH3.ogg",
+    "DSPOSACT": "wads/ashesmon/pk/Sounds/Monsters/DSVULAC1.ogg",
+    "DSSSSIT": "wads/ashesmon/pk/Sounds/Monsters/GRDSE1.ogg",
+    "DSSSDTH": "wads/ashesmon/pk/Sounds/Monsters/GRDDI1.ogg",
+    "DSBSPSIT": "wads/ashesmon/pk/Sounds/Monsters/FEMSEE1.ogg",
+    "DSKEENPN": "wads/ashesmon/pk/Sounds/Monsters/femhit1.ogg",
+    "DSKEENDT": "wads/ashesmon/pk/Sounds/Monsters/femded1.ogg",
+    "DSBGSIT1": "wads/ashesmon/pk/Sounds/Monsters/dspfsigt.ogg",
+    "DSBGSIT2": "wads/ashesmon/pk/Sounds/Monsters/dspfsigt.ogg",
+    "DSBGACT": "wads/ashesmon/pk/Sounds/Monsters/dspfidle.ogg",
+    "DSBGDTH1": "wads/ashesmon/pk/Sounds/Monsters/dspfdth1.ogg",
+    "DSBGDTH2": "wads/ashesmon/pk/Sounds/Monsters/dspfdth2.ogg",
+    "DSSGTSIT": "wads/ashesmon/pk/Sounds/Monsters/dscasit1.ogg",
+    "DSDMPAIN": "wads/ashesmon/pk/Sounds/Monsters/dscapai1.ogg",
+    "DSSGTDTH": "wads/ashesmon/pk/Sounds/Monsters/dscadth1.ogg",
+    "DSDMACT": "wads/ashesmon/pk/Sounds/Monsters/dscaact1.ogg",
+    "DSBSPWLK": "wads/ashesweap/pk/Sounds/Weapons/XBOHIT2.WAV"
+  },
+  "sound_variants": {
+    "DSPOSACT": [
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULLK1.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULLK2.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULLK3.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULLK4.ogg"
+    ],
+    "DSPOPAIN": [
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULPA2.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULPA3.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULPA4.ogg"
+    ],
+    "DSPOSIT1": [
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULSI4.ogg"
+    ],
+    "DSPOSIT2": [
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULSI5.ogg"
+    ],
+    "DSPOSIT3": [
+      "wads/ashesmon/pk/Sounds/Monsters/DSVULSI6.ogg"
+    ],
+    "DSPODTH1": [
+      "wads/ashesmon/pk/Sounds/Monsters/DSVUDTH4.ogg"
+    ],
+    "DSSSSIT": [
+      "wads/ashesmon/pk/Sounds/Monsters/GRDSE2.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/GRDSE3.ogg"
+    ],
+    "DSSSDTH": [
+      "wads/ashesmon/pk/Sounds/Monsters/GRDDI2.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/GRDDI3.ogg"
+    ],
+    "DSSGTSIT": [
+      "wads/ashesmon/pk/Sounds/Monsters/dscasit2.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/dscasit3.ogg"
+    ],
+    "DSDMACT": [
+      "wads/ashesmon/pk/Sounds/Monsters/dscaact2.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/dscaact3.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/dscaact4.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/dscaact5.ogg"
+    ],
+    "DSDMPAIN": [
+      "wads/ashesmon/pk/Sounds/Monsters/dscapai2.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/dscapai3.ogg"
+    ],
+    "DSSGTDTH": [
+      "wads/ashesmon/pk/Sounds/Monsters/dscadth2.ogg",
+      "wads/ashesmon/pk/Sounds/Monsters/dscadth3.ogg"
+    ]
+  },
+  "zweapons": [
+    {
+      "name": "Crowbar",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Crowbar.txt",
+      "actor": "Crowbar",
+      "into": 0,
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "Fire"
+      },
+      "punch": [
+        15,
+        30
+      ]
+    },
+    {
+      "name": "Police Pistol",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Glock.txt",
+      "actor": "PolicePistol",
+      "into": 1,
+      "lift": 0,
+      "labels": {
+        "ready": "LoadedReady",
+        "select": "LoadedSelect",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 15,
+      "fire_min_tics": 11
+    },
+    {
+      "name": "Lever Action Shotgun",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/LeverGun.txt",
+      "actor": "Leveraction",
+      "into": 2,
+      "lift": 0,
+      "labels": {
+        "ready": "ReadyLoaded",
+        "select": "SelectLoaded",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "ReloadLoadedStart",
+        "reload_loop": "ShellLoaded",
+        "reload_end": "ReloadDone",
+        "extra": [
+          "Pump"
+        ]
+      },
+      "ammo": "am_shell",
+      "mag": 7,
+      "pickup_replaces": "SHOT",
+      "pickup": "LVGPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "jump_fire": "\"leverfired\"",
+      "skip_reload_end": "^LEAC\\b",
+      "decorate_extra": "tools/mods/ashes_lever_spin.dec"
+    },
+    {
+      "name": "Modular Rifle",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Ar15.txt",
+      "actor": "ModRifle1",
+      "into": 3,
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "RealFire",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 30,
+      "pickup_replaces": "MGUN",
+      "pickup": "MR1PA",
+      "pickup_scale": [
+        1,
+        2
+      ],
+      "fire_min_tics": 5
+    },
+    {
+      "name": "Thumper",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Thumper.txt",
+      "actor": "Thumper",
+      "into": 4,
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work"
+      },
+      "ammo": "am_misl",
+      "mag": 1,
+      "pickup_replaces": "LAUN",
+      "pickup": "M79PA",
+      "pickup_scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Hunter Shotgun",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Sawedoff.txt",
+      "actor": "HunterShotgun",
+      "into": 8,
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_shell",
+      "mag": 2,
+      "pickup_replaces": "SGN2",
+      "pickup": "HNSPA",
+      "pickup_scale": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "Revolver",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Revolver.txt",
+      "actor": "revolver",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 6,
+      "slot": 2,
+      "doomednum": 4201,
+      "pickup": "REVPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "place": [
+        {
+          "replace": 2011,
+          "maps": [
+            1
+          ],
+          "every": 99
+        }
+      ]
+    },
+    {
+      "name": "Machine Pistol",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Ingram.txt",
+      "actor": "Ingram",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "LoadedReady",
+        "select": "LoadedSelect",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 32,
+      "slot": 4,
+      "doomednum": 4202,
+      "pickup": "MPIPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "place": [
+        {
+          "replace": 2048,
+          "maps": [
+            5
+          ],
+          "every": 99
+        }
+      ],
+      "fire_min_tics": 3
+    },
+    {
+      "name": "Military Rifle",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Ar15.txt",
+      "actor": "M16",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "RealFire",
+        "reload": "Work1"
+      },
+      "ammo": "am_rifle",
+      "mag": 30,
+      "slot": 6,
+      "doomednum": 4203,
+      "pickup": "M16PA",
+      "pickup_scale": [
+        1,
+        2
+      ],
+      "place": [
+        {
+          "replace": 2048,
+          "maps": [
+            8
+          ],
+          "every": 99
+        }
+      ]
+    },
+    {
+      "name": "9mm Autoloader",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Glock.txt",
+      "actor": "Glock",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "LoadedReady",
+        "select": "LoadedSelect",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_clip",
+      "mag": 16,
+      "slot": 2,
+      "doomednum": 4204,
+      "pickup": "GLPPA",
+      "pickup_scale": [
+        7,
+        10
+      ],
+      "place": [
+        {
+          "replace": 2049,
+          "maps": [
+            1
+          ],
+          "every": 99
+        },
+        {
+          "replace": 2048,
+          "maps": [
+            2
+          ],
+          "every": 99
+        }
+      ]
+    },
+    {
+      "name": "Pump-action Shotgun",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/Shotgun.txt",
+      "actor": "pumpaction",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "ReloadStart",
+        "reload_loop": "ReloadLoop",
+        "reload_end": "ReloadDone"
+      },
+      "ammo": "am_shell",
+      "mag": 6,
+      "slot": 3,
+      "doomednum": 4205,
+      "pickup": "GRZPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "place": [
+        {
+          "replace": 2049,
+          "maps": [
+            4
+          ],
+          "every": 99
+        }
+      ]
+    },
+    {
+      "name": "Bolt-Caster",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/XBOW.txt",
+      "actor": "Xbow",
+      "into": 5,
+      "lift": 0,
+      "labels": {
+        "ready": "LoadedReady",
+        "select": "LoadedSelect",
+        "deselect": "Deselect",
+        "fire": "FireReal",
+        "reload": "Work1"
+      },
+      "ammo": "am_cell",
+      "mag": 1,
+      "fire": [
+        90,
+        1,
+        0
+      ],
+      "pickup_replaces": "PLAS",
+      "pickup": "XBWPA",
+      "pickup_scale": [
+        7,
+        10
+      ],
+      "projectile": "MT_PLASMA",
+      "slot": 7
+    },
+    {
+      "name": "Battle Rifle",
+      "root": "wads/ashesweap/pk",
+      "decorate": "Actors/Weapons/FAL.txt",
+      "actor": "FAL",
+      "into": "extra",
+      "lift": 0,
+      "labels": {
+        "ready": "Ready",
+        "select": "Select",
+        "deselect": "Deselect",
+        "fire": "RealFire",
+        "reload": "Work1"
+      },
+      "ammo": "am_rifle",
+      "mag": 20,
+      "slot": 6,
+      "doomednum": 4206,
+      "pickup": "FWEPA",
+      "pickup_scale": [
+        3,
+        5
+      ],
+      "place": [
+        {
+          "replace": 2048,
+          "maps": [
+            10
+          ],
+          "every": 99
+        }
+      ]
+    }
+  ],
+  "sprite_textures": [
+    "tools/mods/ashes_lever_spin.textures"
+  ],
+  "extra_ammo": {
+    "max": 150,
+    "clip": 15,
+    "pickups": [
+      {
+        "doomednum": 4210,
+        "root": "wads/ashesweap/pk",
+        "pickup": "556AA",
+        "pickup_scale": [
+          3,
+          5
+        ],
+        "clips": 2,
+        "message": "Got the rifle cartridges."
+      }
+    ]
+  },
+  "remove_weapons": [
+    6,
+    7
+  ],
+  "fog": {
+    "color": [
+      10,
+      11,
+      13
+    ],
+    "start": 64,
+    "range": 640
+  },
+  "gore": 2,
+  "hud": "overlay",
+  "texture_match": {
+    "dir": "wads/ashes2063/pk",
+    "defs": [
+      "wads/ashes2063/defs/TEXTURES.def"
+    ],
+    "all": true,
+    "switch_panels": {
+      "door": [
+        "SW4S0",
+        "SW4S1"
+      ],
+      "lift": [
+        "SW3S0",
+        "SW3S1"
+      ],
+      "exit": [
+        "SW1S0",
+        "SW1S1"
+      ],
+      "other": [
+        "SW450",
+        "SW451"
+      ]
+    },
+    "force": {
+      "BIGDOOR1": "DOOR31"
+    }
+  },
+  "sprite_wad": {
+    "wad": "wads/hacx/HACX.WAD",
+    "prefixes": [
+      "TFOG",
+      "IFOG",
+      "PINS",
+      "MEGA"
+    ]
+  },
+  "grenade": true,
+  "keep_frames": {
+    "MISL": "EFGHI"
+  },
+  "dm_weapons": false,
+  "maps": [
+    1,
+    10
+  ],
+  "place_things": [
+    {
+      "replace": 82,
+      "with": 82,
+      "maps": [
+        7
+      ],
+      "every": 99,
+      "dm": true
+    },
+    {
+      "replace": 2046,
+      "with": 2004,
+      "maps": [
+        9
+      ],
+      "every": 99
+    },
+    {
+      "replace": 2010,
+      "with": 2047,
+      "maps": [
+        9,
+        10
+      ],
+      "every": 3
+    }
+  ],
+  "add_things": [
+    {
+      "thing": 2012,
+      "per_monsters": 5,
+      "min": 3
+    },
+    {
+      "thing": 2048,
+      "per_monsters": 10,
+      "min": 1,
+      "spread_from": [
+        2007,
+        2048
+      ]
+    },
+    {
+      "thing": 2049,
+      "per_monsters": 15,
+      "min": 1,
+      "maps": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "spread_from": [
+        2008,
+        2049
+      ]
+    },
+    {
+      "thing": 4210,
+      "per_monsters": 10,
+      "min": 3,
+      "maps": [
+        8,
+        9,
+        10
+      ],
+      "spread_from": [
+        4210
+      ]
+    },
+    {
+      "thing": 17,
+      "min": 1,
+      "per_monsters": 99,
+      "maps": [
+        10
+      ],
+      "spread_from": [
+        17,
+        2047
+      ]
+    }
+  ],
+  "sprite_quality": "full",
+  "sprite_resample": "majority",
+  "state_chains": {
+    "S_EXPLODE1": [
+      [
+        "SPLO",
+        "A",
+        2,
+        "A_Explode",
+        true
+      ],
+      [
+        "SPLO",
+        "B",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "C",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "D",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "E",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "F",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "G",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "H",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "I",
+        3,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "J",
+        3,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "K",
+        3,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "L",
+        3,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "M",
+        3,
+        null,
+        false
+      ]
+    ],
+    "S_BEXP": [
+      [
+        "BAR1",
+        "A",
+        4,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "A",
+        2,
+        "A_Scream",
+        true
+      ],
+      [
+        "SPLO",
+        "B",
+        2,
+        "A_Explode",
+        true
+      ],
+      [
+        "SPLO",
+        "C",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "D",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "E",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "F",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "G",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "H",
+        2,
+        null,
+        true
+      ],
+      [
+        "SPLO",
+        "I",
+        3,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "J",
+        3,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "K",
+        3,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "L",
+        3,
+        null,
+        false
+      ],
+      [
+        "SPLO",
+        "M",
+        3,
+        null,
+        false
+      ]
+    ]
+  },
+  "explosion_drop": 40,
+  "ui": {
+    "small_font": {
+      "fon2": "wads/ashes_ui/SMALLFNT.lmp",
+      "color": [
+        236,
+        214,
+        160
+      ]
+    },
+    "menu_font": {
+      "ttf": "/System/Library/Fonts/Supplemental/Krungthep.ttf",
+      "size": 13
+    },
+    "title": {
+      "name": "POCKET APOCALYPSE",
+      "font": "/System/Library/Fonts/Supplemental/Impact.ttf",
+      "size": 30,
+      "small_font": "/System/Library/Fonts/Supplemental/Krungthep.ttf",
+      "small_size": 11,
+      "background": "wads/ashes_ui/CUT6BACK",
+      "tagline": "CARDPUTER EDITION",
+      "tagline_size": 9
+    },
+    "interpic": "wads/ashes_ui/INTERPIC"
+  },
+  "skills": [
+    "Can I Pet The Mutant?",
+    "Wasteland Tourist",
+    "Rust In Peace",
+    "Mad Maximum",
+    "Glow In The Dark!"
+  ]
+}

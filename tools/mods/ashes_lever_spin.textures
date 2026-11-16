@@ -1,0 +1,105 @@
+// Lever Action spin-cock frames without the lantern (tools/mods/ashes_lever_spin.dec):
+// Ashes 2063 Weapon Pack TEXTURES LEACA0-LEACQ0 minus their SOLAR2 patch; the
+// spin (G-M) 40 px further left: Ashes swings it out past a 320 view's edge.
+
+Sprite "LSPNA0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACD", 78, 71
+}
+
+Sprite "LSPNB0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACD", 74, 81
+}
+
+Sprite "LSPNC0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACE", 114, 128
+}
+
+Sprite "LSPND0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACE", 111, 140
+}
+
+Sprite "LSPNE0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACE", 118, 128
+}
+
+Sprite "LSPNF0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACD", 97, 74
+}
+
+Sprite "LSPNG0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACF", 126, 41
+}
+
+Sprite "LSPNH0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACF", 140, 51
+}
+
+Sprite "LSPNI0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACG", 152, -15
+}
+
+Sprite "LSPNJ0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACG", 169, 33
+}
+
+Sprite "LSPNK0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACH", 162, 43
+}
+
+Sprite "LSPNL0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACI", 166, 86
+}
+
+Sprite "LSPNM0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACI", 169, 145
+}
+
+Sprite "LSPNN0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACE", 111, 140
+}
+
+Sprite "LSPNO0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACE", 114, 128
+}
+
+Sprite "LSPNP0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACA", 74, 81
+}
+
+Sprite "LSPNQ0", 370, 210
+{
+	Offset 7, 33
+	Patch "L2ACA", 78, 71
+}

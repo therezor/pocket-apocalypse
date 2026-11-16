@@ -1,0 +1,11 @@
+Patch File for DeHackEd v3.0
+# Ashes 2063 raider voices for the chaingunner (tools/mods/dbp77.json): the
+# arachnotron sight and Commander Keen pain/death slots, unused here, carry
+# the female raider sounds (sounds_replace DSBSPSIT/DSKEENPN/DSKEENDT).
+Doom version = 19
+Patch format = 6
+
+Thing 11 (Chaingunner)
+Alert sound = 46
+Pain sound = 103
+Death sound = 104

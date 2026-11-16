@@ -1,0 +1,24 @@
+Patch File for DeHackEd v3.0
+# Ashes 2063 projectiles (tools/mods/dark_ashes.json, tw_ashes.json):
+# - The Bolt-Caster's bolt: the zweapon fires MT_PLASMA ("projectile"), drawn
+#   with Ashes' CBLT arrow (sprite_sets PLSS/PLSE). Fast and thin, and much
+#   harder than Ashes' XbowBoltFX (85-100): 50 x 1-8, one bolt drops nearly
+#   anything. It lands with the
+#   arachnotron-walk sound slot (79, DSBSPWLK = Ashes XBOHIT2 via
+#   sounds_replace), so the imp's fireball keeps its own explosion sound.
+# - The Thumper's grenade (MT_ROCKET, MISL = Ashes BLOO): a bit faster; the
+#   engine (MOD_GRENADE) drops it in an arc and tumbles it.
+
+Doom version = 21
+Patch format = 6
+
+Thing 35 (Plasma Bullet)
+Speed = 1966080
+Width = 262144
+Height = 524288
+Missile damage = 50
+Death sound = 79
+Bits = 67088
+
+Thing 34 (Rocket)
+Speed = 1638400

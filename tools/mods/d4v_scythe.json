@@ -1,0 +1,63 @@
+{
+  "name": "Doom 4 Vanilla: Scythe",
+  "comment": "D4V v3.2.1 (gameplay) over Scythe episode 1 (Erik Alm). Load order as in D4V's readme: map WAD, D4V.wad, the MAP07 fix. Weapons: D4V's regular set plus four D4V 2.0+ extras as extra weapon slots (deh2c.py transplant, wp_extra*), each sharing a number key with its vanilla counterpart: H.A.R (4), Hellshot and Reaper (3), Gauss cannon (7) (the grenade launcher and lightning gun were dropped: broken / zone exhaustion on the device); their pickups replace some vanilla ones (place). dm_weapons: Scythe places the SSG, plasma rifle and BFG for deathmatch only; they appear in single player too. psprite_nudge lifts D4V's chainsaw, drawn mostly under the status bar. The Vortex rifle is left out: it depends on vanilla reading past the end of the weapon table (D4V: 'will not run on every port'), which crashes here. Stock walls and floors use the Dark Textures Pack - LowRes (Doomenator, low-res by L30W; JDoom layout, converted by tools/texture_pack.py, textures 128+ wide at half width); the rest falls back to Freedoom 0.13 patches (BSD). D4V's own art (doors, switches, liquids, sky) is kept.",
+  "iwad": "~/Library/Application Support/gzdoom/DOOM2.WAD",
+  "pwads": [
+    "wads/d4v/SCYTHE.WAD",
+    "wads/d4v/D4V.wad",
+    "wads/d4v/fSCYTHE.WAD"
+  ],
+  "deh": ["wads/d4v/D4V.deh"],
+  "dm_weapons": true,
+  "psprite_nudge": {"SAWG": [0, 14], "SAWGC": [20, 0], "SAWGD": [20, 0]},
+  "transplant": [
+    {"name": "H.A.R", "deh": "wads/d4v/4_HAR.deh", "weapon": 3, "into": "extra", "slot": 4, "doomednum": 4101,
+     "place": [{"replace": 2002, "maps": [1, 2, 3, 4]}]},
+    {"name": "Hellshot", "deh": "wads/d4v/3_HELLST.deh", "weapon": 2, "into": "extra", "slot": 3, "doomednum": 4102,
+     "place": [{"replace": 2001, "maps": [2, 3, 4], "every": 2}]},
+    {"name": "Reaper", "deh": "wads/d4v/3_REAPER.deh", "weapon": 8, "into": "extra", "slot": 3, "doomednum": 4103,
+     "place": [{"replace": 82, "maps": [8, 9, 10], "every": 2}]},
+    {"name": "Gauss Cannon", "deh": "wads/d4v/7_GAUSS.deh", "weapon": 6, "into": "extra", "slot": 7, "doomednum": 4106,
+     "place": [{"replace": 2006, "maps": [2, 3, 4, 5]}]}
+  ],
+  "maps": [
+    1,
+    10
+  ],
+  "end_flat": "SLIME16",
+  "end_text": [
+    "THE LORDS ARE DEAD AND THE",
+    "FIRST RIFT IS SEALED.",
+    "",
+    "BUT THE TIME ANOMALY IS STILL",
+    "OUT THERE, AND THE DEMONS KEEP",
+    "COMING THROUGH IT.",
+    "",
+    "RIP AND TEAR. UNTIL IT IS DONE."
+  ],
+  "strings": {
+    "HUSTR_1": "1: Get going!",
+    "HUSTR_2": "2: Punchline",
+    "HUSTR_3": "3: Up and around",
+    "HUSTR_4": "4: Lost warehouse",
+    "HUSTR_5": "5: Slimy tunnels",
+    "HUSTR_6": "6: Pressure point",
+    "HUSTR_7": "7: Deadly",
+    "HUSTR_8": "8: Garden base",
+    "HUSTR_9": "9: Computer storage",
+    "HUSTR_10": "10: The Lords"
+  },
+  "sfx_rate": 8000,
+  "sfx_long": [12000, 6000],
+  "texture_wads": [
+    "wads/freedoom/freedoom2.wad"
+  ],
+  "texture_pack": {"dir": "wads/darktex/pk/data/jdoom", "half_width_min": 128},
+  "skills": [
+    "I'm Too Young To Die",
+    "Hurt Me Plenty",
+    "Ultra-Violence",
+    "Nightmare",
+    "Ultra-Nightmare"
+  ]
+}

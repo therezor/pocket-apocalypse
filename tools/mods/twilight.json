@@ -1,0 +1,21 @@
+{
+  "name": "Twilight Warrior",
+  "comment": "Black Shadow Software's 1998 Doom Legacy TC (vanilla maps + DeHackEd).",
+  "iwad": "~/Library/Application Support/gzdoom/DOOM2.WAD",
+  "pwads": ["wads/TWILIGHT.WAD"],
+  "deh": ["wads/TWILIGHT.DEH"],
+  "maps": [1, 10],
+  "end_flat": "SLIME16",
+  "end_text": [
+    "OPERATION PHOENIX IS OVER.",
+    "",
+    "YOU CAME THROUGH EVERY MISSION",
+    "GCTO COULD THROW AT YOU, AND",
+    "THE MEN WHO SENT YOU IN ARE",
+    "STILL TALKING ABOUT IT.",
+    "",
+    "YOU HAVE EARNED THE NAME.",
+    "",
+    "YOU ARE THE TWILIGHT WARRIOR."
+  ]
+}

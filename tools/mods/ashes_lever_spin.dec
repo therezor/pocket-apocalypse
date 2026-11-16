@@ -1,0 +1,14 @@
+// Lever Action Shotgun (scythe_ashes.json "decorate_extra"): a spin-cock
+// between shots instead of the plain lever pull. Ashes only spins it with
+// the lantern out; these are the same one-handed frames without the lantern
+// (LSPN, tools/mods/ashes_lever_spin.textures).
+  Pump:
+    LSPN ABCDEF 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
+    TNT1 A 0 A_PlaySound ("weapons/leveropen", CHAN_ITEM)
+    LSPN GHIJ 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
+    TNT1 A 0 A_spawnitemex("shellCasingspawner",-10,-10,32,-10)
+    LSPN KLM 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
+    TNT1 A 2 A_PlaySound ("weapons/leverclose", CHAN_ITEM)
+    LSPN NOPQ 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
+    LEAG A 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
+    Goto Ready
